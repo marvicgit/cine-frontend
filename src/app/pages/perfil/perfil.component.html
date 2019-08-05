@@ -1,0 +1,17 @@
+<mat-toolbar>
+    Perfil</mat-toolbar>
+<div class="center">
+    <div>
+        <mat-form-field class="mat-form-field">
+            <input matInput placeholder="Usuario" [(ngModel)]="usuario" name="usuario">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field class="mat-form-field">
+            <input matInput placeholder="Roles" [(ngModel)]="roles" name="roles">
+        </mat-form-field>
+    </div>
+    <div class="gallery">
+        <img mat-card-image [src]="imagenData" *ngIf="imagenEstado" width="600" height="400" alt="Forest" />
+    </div>
+</div>
